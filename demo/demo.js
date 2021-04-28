@@ -29,12 +29,17 @@ var sketch = function( p ) {
   var canvas;
   var idx = [0, 1, 2, 3, 4];
   idx = shuffle(idx);
-  var title_text="Input Order: "+idx;
+  var title_text="Permutation Order: ["+idx+"]";
   var shuffle_button, restart_button;
   var shuffle_button_mode = true;
 
   var input_labels = ["x", "ẋ", "cos(θ)", "sin(θ)", "θ̇"];
+  var augmented_input_labels = new Array(5);
   var obs_history;
+
+  for (var i=0;i<5;i++) {
+    augmented_input_labels[idx[i]] = input_labels[i];
+  }
 
   // agent
   var env = new CartPoleSwingUpEnv( p );
@@ -118,7 +123,11 @@ var sketch = function( p ) {
 
   var shuffle_observation_order = function() {
     idx = shuffle(idx);
-    title_text="Input Order: "+idx;
+    title_text="Permutation Order: ["+idx+"]";
+
+    for (var i=0;i<5;i++) {
+      augmented_input_labels[idx[i]] = input_labels[i];
+    }
   }
 
   var restart_environment = function() {
@@ -149,7 +158,7 @@ var sketch = function( p ) {
       if (i == 0) {
         o = obs[i] / env.x_threshold;
       }
-      obs_history[i].push(o);
+      obs_history[idx[i]].push(o);
     }
     [action, hidden_state] = model.forward(augmented_obs, hidden_state);
 
@@ -172,11 +181,11 @@ var sketch = function( p ) {
     var delta_x = (screen_width-170-40) / 120;
     var start_x = screen_width*0.02+170;
     p.stroke(0);
-    p.strokeWeight(1.0);
+    p.strokeWeight(0.5);
     for(var i=0;i<5;i++) {
-      p.text("Input #"+i+", "+input_labels[idx[i]], screen_width*0.02, history_area+30*i)
+      p.text("Input "+i+": "+augmented_input_labels[i], screen_width*0.02, history_area+30*i)
       //p.text(obs_history[i][history_length-1], screen_width*0.02+150, history_area+30*i)
-      var o = obs_history[idx[i]];
+      var o = obs_history[i];
       var y = 0;
       for(var j=0;j<120;j++) {
         if (j > history_length-1) {

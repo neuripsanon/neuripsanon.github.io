@@ -16,7 +16,7 @@ function CartPoleSwingUpEnv( p ) {
   this.b = 0.1;  // friction coefficient
 
   this.t = 0; // timestep
-  this.t_limit = 3000;
+  this.t_limit = 1000;
 
   this.hard_mode = true;
 
