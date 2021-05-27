@@ -197,60 +197,72 @@ ______
 <h2>Cart-Pole Swing Up Demo</h2>
 <p>A permutation invariant network performing <i>CartpoleSwingupHarder</i>. Shuffle the order of the 5 observations at any time, and see how the agent adapts to the new ordering of the observations.</p>
 <!--You can also restart the environment.-->
-<div style="text-align: center;">
+<div style="text-align: left;">
 <figcaption style="color:#FF6C00;">Interactive Demo</figcaption><br/>
 <!--<figcaption style="text-align: left;">
 </figcaption>-->
-<div id="intro_demo" class="unselectable" style="text-align: center;"></div>
+<div id="intro_demo" class="unselectable" style="text-align: left;"></div>
 <br/>
 </div>
 <hr>
 <h2>Supplementary Videos of Pybullet Ant Results</h2>
-<p>[TO DO] Perhaps we can share an interesting video of the ant that constantly gets its input reshuffled, and is struggling to walk forward despite this?</p>
+<div style="text-align: left;">
+<video class="b-lazy" data-src="assets/mp4/ant.mp4" type="video/mp4" autoplay muted playsinline loop style="margin: 0; width: 100%;" ></video>
+<figcaption style="text-align: left;">
+PyBullet Ant with a permutation invariant policy.<br/>
+The ordering of the 28 observations is reshuffled every 100 frames.<br/>
+</figcaption>
+</div>
 <hr>
 <h2>Supplementary Videos of Atari Pong Results</h2>
-<div style="text-align: center;">
-<video src="assets/mp4/pong.mp4" type="video/mp4" autoplay muted playsinline loop style="margin: 0; width: 100%;" ></video>
-<figcaption style="text-align: center;">
-Atari Pong base task (left). Modified shuffled-screen task (right). No occlusion.<br/>
+<div style="text-align: left;">
+<video class="b-lazy" data-src="assets/mp4/pong_reshuffle.mp4" type="video/mp4" autoplay muted playsinline loop style="margin: 0; width: 100%;" ></video>
+<figcaption style="text-align: left;">
+Atari Pong base task (left). Modified shuffled-screen task (right).<br/>
+No occlusion. Observations reshuffled every 500 frames.<br/>
 </figcaption>
 </div>
-<div style="text-align: center;">
-<video class="b-lazy" data-src="assets/mp4/occluded_pong.mp4" type="video/mp4" autoplay muted playsinline loop style="margin: 0; width: 100%;" ></video>
-<figcaption style="text-align: center;">
-Occluded, Shuffled-screen Atari Pong. No reshuffling during an episode.<br/>
+<br/>
+<div style="text-align: left;">
+<video class="b-lazy" data-src="assets/mp4/pong_occluded_reshuffle.mp4" type="video/mp4" autoplay muted playsinline loop style="margin: 0; width: 100%;" ></video>
+<figcaption style="text-align: left;">
+70% Occluded, Shuffled-screen Atari Pong.<br/>
+Observations reshuffled every 500 frames.<br/>
 </figcaption>
 </div>
-<p>[TO DO] Maybe we can also share a video of pong results that have a high occlusion rate (via back patches), that shuffles frequently?</p>
 <hr>
 <h2>Supplementary Videos of Car Racing Results</h2>
-<div style="text-align: center;">
+<div style="text-align: left;">
 <video src="assets/mp4/car_racing.mp4" type="video/mp4" autoplay muted playsinline loop style="margin: 0; width: 100%;" ></video>
-<figcaption style="text-align: center;">
+<figcaption style="text-align: left;">
 CarRacing base task (left). Modified shuffled-screen task (right).<br/>
 </figcaption>
 </div>
-<div style="text-align: center;">
+<br/>
+<div style="text-align: left;">
 <video class="b-lazy" data-src="assets/mp4/kof.mp4" type="video/mp4" autoplay muted playsinline loop style="width:100%;" ></video>
-<figcaption style="text-align: center;">
+<figcaption style="text-align: left;">
 KOF background.<br/>
 </figcaption>
 </div>
-<div style="text-align: center;">
+<br/>
+<div style="text-align: left;">
 <video class="b-lazy" data-src="assets/mp4/mt_fuji.mp4" type="video/mp4" autoplay muted playsinline loop style="width:100%;" ></video>
-<figcaption style="text-align: center;">
+<figcaption style="text-align: left;">
 Mt. Fuji background.<br/>
 </figcaption>
 </div>
-<div style="text-align: center;">
+<br/>
+<div style="text-align: left;">
 <video class="b-lazy" data-src="assets/mp4/ds.mp4" type="video/mp4" autoplay muted playsinline loop style="width:100%;" ></video>
-<figcaption style="text-align: center;">
+<figcaption style="text-align: left;">
 DS background.<br/>
 </figcaption>
 </div>
-<div style="text-align: center;">
+<br/>
+<div style="text-align: left;">
 <video class="b-lazy" data-src="assets/mp4/ukiyoe.mp4" type="video/mp4" autoplay muted playsinline loop style="width:100%;" ></video>
-<figcaption style="text-align: center;">
+<figcaption style="text-align: left;">
 Ukiyo-e background.<br/>
 </figcaption>
 </div>
