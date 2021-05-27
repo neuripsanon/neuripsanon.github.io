@@ -24,7 +24,7 @@ A permutation invariant network performing <i>CartpoleSwingupHarder</i>. Shuffle
 
 ______
 
-## Supplementary Videos of Pybullet Ant Results
+## Supplementary Video of Pybullet Ant Results
 
 <div style="text-align: left;">
 <video class="b-lazy" data-src="assets/mp4/ant.mp4" type="video/mp4" autoplay muted playsinline loop style="margin: 0; width: 100%;" ></video>
