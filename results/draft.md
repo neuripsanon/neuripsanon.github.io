@@ -9,7 +9,7 @@ This page contains an interactive demo and videos of experimental results that a
 
 ______
 
-## Cart-Pole Swing Up Demo
+## Permutation Invariant Cart-Pole Swing Up Demo
 
 A permutation invariant network performing <i>CartpoleSwingupHarder</i>. Shuffle the order of the 5 observations at any time, and see how the agent adapts to the new ordering of the observations.
 <!--You can also restart the environment.-->
@@ -24,7 +24,7 @@ A permutation invariant network performing <i>CartpoleSwingupHarder</i>. Shuffle
 
 ______
 
-## Supplementary Video of Pybullet Ant Results
+## Supplementary Video of PyBullet Ant Results
 
 <div style="text-align: left;">
 <video class="b-lazy" data-src="assets/mp4/ant.mp4" type="video/mp4" autoplay muted playsinline loop style="margin: 0; width: 100%;" ></video>
